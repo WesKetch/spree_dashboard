@@ -1,0 +1,23 @@
+<% content_for :title do %>Spree Stats<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div id="spree-1" data-id=<%="#{Time.now.strftime("%A")}-value"%> data-view="Number" data-title=<%=Time.now.strftime("%A")%> data-text="Total Orders" data-prefix="$" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id='weekly_graph_value' data-view="Graph" data-title='' data-text="Total Orders" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="spree-2" data-id=<%="#{1.days.ago.strftime("%A")}-value"%> data-view="Number" data-title=<%=1.days.ago.strftime("%A")%> data-text="Total Orders" data-prefix="$"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="spree-3" data-id=<%="#{2.days.ago.strftime("%A")}-value"%> data-view="Number" data-title=<%=2.days.ago.strftime("%A")%> data-text="Total Orders" data-prefix="$"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="spree-4" data-id=<%="#{3.days.ago.strftime("%A")}-value"%> data-view="Number" data-title=<%=3.days.ago.strftime("%A")%> data-text="Total Orders" data-prefix="$"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="spree-5" data-id=<%="#{4.days.ago.strftime("%A")}-value"%> data-view="Number" data-title=<%=4.days.ago.strftime("%A")%> data-text="Total Orders" data-prefix="$"></div>
+    </li>
+  </ul>
+</div>
