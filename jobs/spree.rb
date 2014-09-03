@@ -7,7 +7,7 @@ require 'active_support/core_ext/date/conversions.rb'
 require 'active_support/core_ext/date/zones.rb'
 
 SPREE_API_URL = 'YOUR URL'
-SPREE_API_KEY = 'YOUR LEY'
+SPREE_API_KEY = 'YOUR KEY'
 
 
 #gets all orders from past 5 days and groups them by day. Displays total order count and total amount of orders
