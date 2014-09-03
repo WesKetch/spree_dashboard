@@ -100,7 +100,7 @@ def get_state(order)
 
   if shipment_state == 'shipped'
     shipment_state
-  elsif (order_state == 'address') || (order_state == 'cart') || (order_state == 'payment')
+  elsif (order_state == 'address') || (order_state == 'cart') || (order_state == 'payment') || (order_state == 'confirm')
     'checkout'
   else
     order_state
